@@ -17,7 +17,7 @@ function indent() {
 }
 
 cd $BUILD_DIR
-echo "-----> BUILD_DIR: " $BUILD_DIR
+ls
 ./vcompile
 
 # tar zxf mecab-0.996.tar.gz
