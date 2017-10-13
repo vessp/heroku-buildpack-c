@@ -17,16 +17,7 @@ function indent() {
 }
 
 cd $BUILD_DIR
-ls
 ./vcompile
-
-# tar zxf mecab-0.996.tar.gz
-# cd mecab-0.996
-# echo "-----> Configuring"
-# ./configure --with-charset=utf8
-# echo "-----> Compiling with Make"
-# make
-
 
 # # configure
 # if [ -f configure ]; then
