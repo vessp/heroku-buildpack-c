@@ -16,14 +16,24 @@ function indent() {
   esac
 }
 
-cd $BUILD_DIR/mecab-0.996
+cd $BUILD_DIR
 
-# configure
-if [ -f configure ]; then
-  echo "-----> Configuring"
-  ./configure 2>&1 | indent
-fi
+./vcompile
 
+# tar zxf mecab-0.996.tar.gz
+# cd mecab-0.996
+# echo "-----> Configuring"
+# ./configure --with-charset=utf8
+# echo "-----> Compiling with Make"
 # make
-echo "-----> Compiling with Make"
-make 2>&1 | indent
+
+
+# # configure
+# if [ -f configure ]; then
+#   echo "-----> Configuring"
+#   ./configure 2>&1 | indent
+# fi
+
+# # make
+# echo "-----> Compiling with Make"
+# make 2>&1 | indent
